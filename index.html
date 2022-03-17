@@ -5,11 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-
         <title>Dashboard</title>
     </head>
     <body>
-        <div class='cnt'>
+        <div class='cnt' style="min-height: calc(100vh - 60px); padding: 30px">
             <div class="top d-flex justify-content-between mb-3">
               <div class=" h4">Up Time:00:11:39</div>
               <img width="40" height="40" src="settings.png" />
@@ -24,7 +23,7 @@
               <div class="col-md-6 cards pt-5" style="color: #363636;">
                 <div class="crd row mb-5" style="border: solid #ff3434 2px;">
                   <div class="col-9 d-flex justify-content-center align-items-center" style="position: relative;">
-                    <div class="display-3" style="font-weight: 400;"> 469 C</div>
+                    <div class="display-3" style="font-weight: 400;"> 469 °C</div>
                     <div style="position: absolute; bottom: 5px; left: 20px; font-weight: 600; font-size: 1.2rem;">Temperature</div>
                   </div>
                   <div class="col-3 d-flex  justify-content-center align-items-center" style="background-color: #ff3434;">
@@ -33,8 +32,8 @@
                 </div>
                 <div class="crd row mb-5" style="border: solid #ffaa3b 2px;">
                     <div class="col-9 d-flex justify-content-center align-items-center" style="position: relative;">
-                      <div class="display-3" style="font-weight: 400;"> 469 C</div>
-                      <div style="position: absolute; bottom: 5px; left: 20px; font-weight: 600; font-size: 1.2rem;">Temperature</div>
+                      <div class="display-3" style="font-weight: 400;"> 09.5 s</div>
+                      <div style="position: absolute; bottom: 5px; left: 20px; font-weight: 600; font-size: 1.2rem;">Cycle Time</div>
                     </div>
                     <div class="col-3 d-flex  justify-content-center align-items-center" style="background-color: #ffaa3b;">
                       <img width="90" height="90" src="cycle.png" />
@@ -42,8 +41,8 @@
                   </div>
                   <div class="crd row mb-5" style="border: solid #04a780 2px;">
                     <div class="col-9 d-flex justify-content-center align-items-center" style="position: relative;">
-                      <div class="display-3" style="font-weight: 400;"> 469 C</div>
-                      <div style="position: absolute; bottom: 5px; left: 20px; font-weight: 600; font-size: 1.2rem;">Temperature</div>
+                      <div class="display-3" style="font-weight: 400;"> 4</div>
+                      <div style="position: absolute; bottom: 5px; left: 20px; font-weight: 600; font-size: 1.2rem;">Cycle Count</div>
                     </div>
                     <div class="col-3 d-flex  justify-content-center align-items-center" style="background-color: #04a780;">
                       <img width="90" height="90" src="counter.png" />
@@ -52,13 +51,19 @@
               </div>
             </div>
           </div>
+          <div class="px-4">
+            <div style="float: right;">
+                <span style="opacity: .6; font-size: 1.3rem;">Developed by</span>
+                <img class="pb-2" height="50" src="logo.png">
+                </div>
+          </div>
+          
     </body>
     <style>
-        .html, body{
+.html, body{
   width: 100vw;
   height: 100vh;
   background: radial-gradient(#0d4881,#0f336b);
-  padding: 30px;
   color: #fff;
 }
 .crd{
